@@ -1,0 +1,69 @@
+/*header style*/
+header {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    padding: 20px;
+    background-color: black;
+}
+
+/*navigation menu style*/
+nav {
+    text-align: center;
+    word-spacing: 0px;
+    Padding: 10px;
+    background-color: rgb(218, 56, 28);
+}
+
+/* nav button style */
+nav a {
+    color: blue;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* body style */
+body {
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+/* footer style */
+footer {
+    text-align: center;
+    color: blue;
+    background-color: rgb(218, 56, 28);
+    padding: 20px;
+}
+
+/* footer button style */
+footer a {
+    color: blue;
+}
+
+/*creating the two-column layout*/
+*{
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-body {
+    flex: 70%;
+    padding: 20px;
+}
+.profile {
+    text-align: center;
+    font-size: larger;
+    flex: 30%;
+    padding: 10px;
+}
+/* profile image and heading style */
+.profile img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
