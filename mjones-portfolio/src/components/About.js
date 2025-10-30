@@ -23,7 +23,7 @@ export default function About() {
             <p></p>
 
             <Typography color="text.secondary">
-                I'm currently seeking internships that will utilize and further expand my experience in electrical and computer engineering, while utilizing the interpersonal skills I've learned from Scouts and previous work experience!
+                I'm currently seeking jobs that will further my career in electrical and computer engineering, while utilizing the engineering skills I've developed over the years!
             </Typography>
 
         </Box>
