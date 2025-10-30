@@ -3,7 +3,12 @@ import { Typography, Box } from "@mui/material";
 
 export default function About() {
     return (
-        <Box sx={{ py: 8 }}>
+        <Box sx={{
+                py: 8,
+                justifyContent: "space-between",
+                textAlign: "center",
+            }}>
+            
             <Typography variant="h4" gutterBottom>
                 About Me
             </Typography>

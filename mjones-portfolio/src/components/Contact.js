@@ -8,7 +8,13 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 export default function Contact() {
     return (
-        <Box sx={{ py: 8 }}>
+        <Box sx={{
+                py: 8,
+                justifyContent: "center",
+                textAlign: "center",
+            }}>
+
+
             <Typography variant="h4" gutterBottom>
                 Get In Touch
             </Typography>
@@ -17,7 +23,13 @@ export default function Contact() {
                 Feel free to reach out for collaborations, projects, or any inquiries!
             </Typography>
 
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={2} sx={{ mb: 3 }}>
+            <Stack direction={{xs: "column", sm: "row"}} spacing={2} 
+                    sx={{ 
+                        mb: 3,
+                        justifyContent: "center",
+                    }}>
+                
+                
                 <Button
                     variant="contained"
                     startIcon={<EmailIcon />}
