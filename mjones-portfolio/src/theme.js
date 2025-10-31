@@ -16,7 +16,7 @@ const theme = createTheme({
     },
     typography: {
         fontFamily: "times-new-roman, serif",
-        fontSize: 16
+        fontSize: 16,
     },
     components: {
         MuiButton: {

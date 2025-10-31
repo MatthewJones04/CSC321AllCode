@@ -36,15 +36,15 @@ export default function Projects() {
 
     return (
         <Box sx={{
-                py: 8,
+                py: 0,
                 justifyContent: "center",
-                textAlign: "center" 
+                textAlign: "center", 
             }}>
             <Typography variant="h4" gutterBottom>
                 Featured Projects
             </Typography>
-
-            <Grid container spacing={3} justifyContent="center">
+            
+            <Grid container spacing={8} justifyContent="center">
                 {projects.map((p) => (
                     <Grid item xs={12} sm={6} md={4} key={p.title}>
                         <ProjectCard {...p} />
