@@ -4,7 +4,7 @@ import {
     Typography, Button, Box,
 } from "@mui/material";
 
-export default function ProjectCard({ title, summary, tags, link }) {
+export default function ProjectCard({ title, projectImagePath, summary, tags, link }) {
     return (
         <Card
             sx={{
@@ -18,9 +18,23 @@ export default function ProjectCard({ title, summary, tags, link }) {
                 <Typography variant="h6" gutterBottom>
                     {title}
                 </Typography>
+
+                <Box 
+                    component="img"
+                    src = {`/projectImages/${projectImagePath}`}
+                    alt = {title}
+                    sx = {{
+                        width: '100%',
+                        height: 'auto',
+                        mb: 2,
+                        borderRadius: 1
+                    }}
+                ></Box>
+
                 <Typography variant="body2" color="text.secondary">
                     {summary}
                 </Typography>
+
                 <Box sx={{ mt: 2 }}>
                     {tags.map((tag) => (
                         <Typography
@@ -36,8 +50,8 @@ export default function ProjectCard({ title, summary, tags, link }) {
                 </Box>
             </CardContent>
             <CardActions>
-                <Button size="small" href={link} target="_blank">
-                    View
+                <Button size="large" href={link} target="_blank">
+                    View More
                 </Button>
             </CardActions>
         </Card>
