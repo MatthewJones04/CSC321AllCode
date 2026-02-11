@@ -226,6 +226,7 @@ function setGenZMode(enabled) {
     const iframe1 = document.getElementById('yt-frame-1');
     const iframe2 = document.getElementById('yt-frame-2');
     const iframe3 = document.getElementById('yt-frame-3');
+    const iframe4 = document.getElementById('yt-frame-4');
 
 
     if (enabled) {
@@ -236,6 +237,7 @@ function setGenZMode(enabled) {
         iframe1.src = "https://www.youtube.com/embed/Lixl3-jz7k8?mute=1&autoplay=1";
         iframe2.src = "https://www.youtube.com/embed/zZ7AimPACzc?mute=1&autoplay=1";
         iframe3.src = "https://www.youtube.com/embed/0c4KWfPhgWA?mute=1&autoplay=1";
+        iframe4.src = "https://www.youtube.com/embed/HXM_2NeYvQw?mute=1&autoplay=1";
     } else {
         document.documentElement.setAttribute('data-genz', 'false');
         localStorage.setItem('genzMode', 'false');
@@ -244,6 +246,7 @@ function setGenZMode(enabled) {
         iframe1.src = "https://www.youtube.com/embed/Lixl3-jz7k8?mute=1";
         iframe2.src = "https://www.youtube.com/embed/zZ7AimPACzc?mute=1";
         iframe3.src = "https://www.youtube.com/embed/0c4KWfPhgWA?mute=1";
+        iframe4.src = "https://www.youtube.com/embed/HXM_2NeYvQw?mute=1";
     }
 
 }
